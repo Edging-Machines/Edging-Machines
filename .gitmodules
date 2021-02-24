@@ -1,3 +1,9 @@
 [submodule "Edge-o-Matic"]
 	path = Edge-o-Matic
 	url = https://github.com/MausTec/nogasm-wifi
+[submodule "Nogasm"]
+	path = Nogasm
+	url = https://github.com/nogasm/nogasm
+[submodule "Protogasm"]
+	path = Protogasm
+	url = https://github.com/night-howler/protogasm
