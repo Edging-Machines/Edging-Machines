@@ -4,9 +4,6 @@
 [submodule "Nogasm"]
 	path = Nogasm
 	url = https://github.com/nogasm/nogasm
-[submodule "Protogasm"]
-	path = Protogasm
-	url = https://github.com/night-howler/protogasm
 [submodule "EOM-Pressure-Shield"]
 	path = EOM-Pressure-Shield
 	url = https://github.com/MausTec/eom-uno-pressure-shield
