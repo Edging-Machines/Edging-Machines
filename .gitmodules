@@ -7,3 +7,6 @@
 [submodule "Protogasm"]
 	path = Protogasm
 	url = https://github.com/night-howler/protogasm
+[submodule "EOM-Pressure-Shield"]
+	path = EOM-Pressure-Shield
+	url = https://github.com/MausTec/eom-uno-pressure-shield
