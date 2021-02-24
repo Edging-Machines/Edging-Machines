@@ -1,9 +1,3 @@
-[submodule "Edge-o-Matic"]
-	path = Edge-o-Matic
-	url = https://github.com/MausTec/nogasm-wifi
-[submodule "Nogasm"]
-	path = Nogasm
-	url = https://github.com/nogasm/nogasm
-[submodule "EOM-Pressure-Shield"]
-	path = EOM-Pressure-Shield
-	url = https://github.com/MausTec/eom-uno-pressure-shield
+[submodule "Protogasm/Protogasm-Original"]
+	path = Protogasm/Protogasm-Original
+	url = https://github.com/night-howler/protogasm
