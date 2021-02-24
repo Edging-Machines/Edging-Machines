@@ -7,3 +7,6 @@
 [submodule "Edge-o-Matic/Edge-o-Matic"]
 	path = Edge-o-Matic/Edge-o-Matic
 	url = https://github.com/MausTec/nogasm-wifi
+[submodule "Nogasm/Nogasm-original"]
+	path = Nogasm/Nogasm-original
+	url = https://github.com/nogasm/nogasm
