@@ -107,10 +107,11 @@ long previousPressure = 0;
 //int bri =100; //Brightness setting
 int rampTimeS = 30; //Ramp-up time, in seconds
 #define DEFAULT_PLIMIT 600
+#define MAX_PLIMIT 1000
 int pLimit = DEFAULT_PLIMIT; //Limit in arousal before the vibrator turns off
 int maxSpeed = 255; //maximum speed the motor will ramp up to in automatic mode
 float motSpeed = 0; //Motor speed, 0-255 (float to maintain smooth ramping to low speeds)
-int lastUpdate = 0;
+long lastUpdate = 0;
 long peakStart = 0;
 
 //=======EEPROM Addresses============================
@@ -247,7 +248,7 @@ void run_auto() {
   int knob = encLimitRead(0,(3*NUM_LEDS)-1);
   sensitivity = knob*4; //Save the setting if we leave and return to this state
   //Reverse "Knob" to map it onto a pressure limit, so that it effectively adjusts sensitivity
-  pLimit = map(knob, 0, 3 * (NUM_LEDS - 1), 1, 300); //set the limit of arousal before the vibrator turns off
+  pLimit = map(knob, 0, 3 * (NUM_LEDS - 1), 1, MAX_PLIMIT); //set the limit of arousal before the vibrator turns off
   if (pressure < previousPressure)
   {
     if (pressure > peakStart)
@@ -272,6 +273,7 @@ void run_auto() {
   if (motSpeed > MOT_MIN) {
     analogWrite(MOTPIN, (int) motSpeed);
   } else {
+    motSpeed = MOT_MIN;
     analogWrite(MOTPIN, 0);
   }
 
@@ -461,5 +463,6 @@ void loop() {
     Serial.print(pressure); //(Original ADC value - 12 bits, 0-4095)
     Serial.print(",");
     Serial.println(constrain(100 * arousal/ (float)pLimit, 0, 100));
+    lastUpdate = millis();
   }
 }
