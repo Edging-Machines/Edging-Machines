@@ -1,4 +1,4 @@
-# Edging-Machines
-This repository is intended to contain as much information as possible about building, designing, prototyping, and using automated edging machines. 
+This repository is a hub of information for [Edging Detection](https://github.com/Edging-Machines/Edging-Machines/wiki/Terminology#edging-detection) and [Edging Machines](https://github.com/Edging-Machines/Edging-Machines/wiki/Terminology#edging-machine). 
+To get started, check the [Quick Start Guide](https://github.com/Edging-Machines/Edging-Machines/wiki), read the [History of Edging Devices](https://github.com/Edging-Machines/Edging-Machines/wiki/History), or browse through the different projects.
 
-An edging machine is a device that is intended to sexually stimulate a user until they are very close to climax which is when the device will stop (or slow down) the stimulation to prevent climax. See [Edging](https://www.urbandictionary.com/define.php?term=Edging) for more info.
+For any questions or discussion, please visit the [official discord server for Edging Machines](https://discord.gg/EvYbZBf).
